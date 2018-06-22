@@ -1,0 +1,19 @@
+[ req ]
+prompt = no
+default_bits = 2048
+distinguished_name = req_distinguished_name
+#req_extensions = req_ext
+
+[ req_distinguished_name ]
+C=US
+ST=UT
+L=CITY
+O=ORGANIZATION
+OU=TEAM
+CN=COMMON_NAME
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = 

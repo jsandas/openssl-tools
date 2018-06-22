@@ -1,0 +1,24 @@
+#
+# localhost.cnf
+#
+
+[ req ]
+prompt = no
+distinguished_name = server_distinguished_name
+req_extensions = v3_req
+
+[ server_distinguished_name ]
+commonName = CertCentral OEM 
+stateOrProvinceName = UT
+countryName = US
+emailAddress = nothing
+organizationName = Digicert, Inc.
+organizationalUnitName = SRE
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+#subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.0 = localhost
